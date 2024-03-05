@@ -1,0 +1,7 @@
+.headerBotonAdmin {
+    width: 120px;
+}
+.headerBotonAdmin:hover .adminImg {
+    filter: invert(100);
+    transition: 0.1s;
+}
