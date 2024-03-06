@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../css/cardInicio.css";
+import { Link } from "react-router-dom";
 
 const CardInicio = props => {
     return (
@@ -18,7 +19,7 @@ const CardInicio = props => {
                     {props.props.title}
                 </Card.Title>
                 <Button className="my-3 mx-5" variant="outline-dark">
-                    Ver más
+                    <Link to={"/receta"}>Ver más</Link>
                 </Button>
             </Card.Body>
         </Card>

@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 function CardBanner(props) {
     return (
@@ -11,7 +12,9 @@ function CardBanner(props) {
             <Card.Body className=" w-50 d-flex flex-column justify-content-center">
                 <Card.Title>{props.props.title}</Card.Title>
                 <Card.Text>{props.props.description}</Card.Text>
-                <Button variant="outline-dark w-25">Ver más</Button>
+                <Button variant="outline-dark w-25">
+                    <Link to={"/receta"}>Ver más</Link>
+                </Button>
             </Card.Body>
         </Card>
     );

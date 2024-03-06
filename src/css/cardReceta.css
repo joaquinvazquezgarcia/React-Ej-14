@@ -1,0 +1,8 @@
+.anchoCardReceta{
+    width: 90%;
+}
+
+.altoCardImg{
+    height: 150px;
+    object-fit: cover;
+}
