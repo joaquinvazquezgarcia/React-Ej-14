@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardInicio from "./CardInicio";
 import CardBanner from "./CardBanner";
 import "../css/inicio.css";
+
 
 /* Eliminar despues es solo para que se muestre algo */
 const objetoDePrueba = {
@@ -24,16 +25,30 @@ const arrayDePrueba = [
 
 export const Inicio = () => {
     /* Acá iria la logica para obtener el array de localStorage */
+    const [arrayRecetas, setRecetas] = useState([]);
+
+    useEffect(() => {
+        const obtenerObjetosLocalStorage = () => {
+            const arrayLocalStorage = localStorage.getItem("tuClaveLocalStorage");
+            if (arrayLocalStorage) {
+                const arrayRecetas = JSON.parse(arrayLocalStorage);
+                setRecetas(arrayRecetas);
+            }
+        };
+        obtenerObjetosLocalStorage();
+    }, []);
+
     return (
         <main className="inicioMain">
             <section className="inicioBanner container">
-                <CardBanner props={objetoDePrueba} />
+                <CardBanner props={arrayRecetas[0]} />
             </section>
             <section className="inicioMenuRecetas d-flex justify-content-between flex-wrap container">
-                {arrayDePrueba.map(object => (
+                {arrayRecetas.map((object) => (
                     <CardInicio props={object} />
                 ))}
             </section>
         </main>
     );
+
 };
