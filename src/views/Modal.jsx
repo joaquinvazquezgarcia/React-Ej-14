@@ -5,8 +5,7 @@ import { useEffect } from "react";
 
 let nextId = 0;
 
-function FormularioModal() {
-    const [recipiesArray, setrecipiesArray] = useState([]);
+function FormularioModal({ recipiesArray, setRecipiesArray }) {
     const [title, setTitle] = useState("");
     const [url, setUrl] = useState("");
     const [description, setDescription] = useState("");
@@ -20,12 +19,11 @@ function FormularioModal() {
             description: description,
         };
 
-        setrecipiesArray([...recipiesArray, object]);
+        setRecipiesArray([...recipiesArray, object]);
         setTitle("");
         setUrl("");
         setDescription("");
     };
-
     useEffect(() => {
         localStorage.setItem("recetas", JSON.stringify(recipiesArray));
     }, [recipiesArray]);
