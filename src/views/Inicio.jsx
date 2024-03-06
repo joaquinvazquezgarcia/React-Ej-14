@@ -11,21 +11,27 @@ const objetoDePrueba = {
     img: "https://www.cbc.ca/kidsnews/images/GOOGLE25THTHUMB2.png",
 };
 
+/* Esto sería como el array que viene de localStorage */
+const arrayDePrueba = [
+    objetoDePrueba,
+    objetoDePrueba,
+    objetoDePrueba,
+    objetoDePrueba,
+    objetoDePrueba,
+    objetoDePrueba,
+];
+
 export const Inicio = () => {
+    /* Acá iria la logica para obtener el array de localStorage */
     return (
         <main className="inicioMain">
             <section className="inicioBanner container">
                 <CardBanner props={objetoDePrueba} />
             </section>
             <section className="inicioMenuRecetas d-flex justify-content-between flex-wrap container">
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
-                <CardInicio props={objetoDePrueba} />
+                {arrayDePrueba.map(object => (
+                    <CardInicio props={object} />
+                ))}
             </section>
         </main>
     );
