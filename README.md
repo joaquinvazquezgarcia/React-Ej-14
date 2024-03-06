@@ -13,6 +13,15 @@ Crear una aplicación web, que permita mostrar un blog de recetas de cocina en u
 -   React Botstrap
 -   React Router
 
+## INICIALIZAR EL PROYECTO 🏁
+### `npm install`
+Debemos descargar las dependencias necesarias para poder correr la App en un servidor de desarrollo.
+### `npm run dev`
+Nos permite correr un servidor de desarrollo.
+### `npm run build`
+Construye la aplicación para producción en la carpeta `dist`.
+
+
 ## ANOTACIONES 🔍
 Por cuestiones de tiempo no logramos hacer funcionar el "Update del CRUD"
 
