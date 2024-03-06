@@ -11,13 +11,15 @@ export const Header = () => {
                     Rolling Kitchen
                 </h1>
             </Link>
-            <button
-                className="headerBotonAdmin btn btn-outline-dark my-3  py-2 d-flex justify-content-evenly"
-                variant="outline-dark"
-            >
-                <img className="adminImg w-25" src={user} />
-                <Link to={"/admin"}>Admin</Link>
-            </button>
+            <Link to={"/admin"}>
+                <button
+                    className="headerBotonAdmin btn btn-outline-dark my-3  py-2 d-flex justify-content-evenly"
+                    variant="outline-dark"
+                >
+                    <img className="adminImg w-25" src={user} />
+                    Admin
+                </button>
+            </Link>
         </header>
     );
 };

@@ -31,7 +31,9 @@ export const Inicio = () => {
             </section>
             <section className="inicioMenuRecetas d-flex justify-content-between flex-wrap container">
                 {arrayRecetas.length > 0
-                    ? arrayRecetas.map(object => <CardInicio props={object} />)
+                    ? arrayRecetas.map(object => (
+                          <CardInicio props={object} key={object.id} />
+                      ))
                     : ""}
             </section>
         </main>

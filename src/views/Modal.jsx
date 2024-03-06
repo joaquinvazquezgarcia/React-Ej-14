@@ -6,9 +6,11 @@ import { useEffect } from "react";
 let nextId = 0;
 
 function FormularioModal({ recipiesArray, setRecipiesArray }) {
-    const [title, setTitle] = useState("");
-    const [url, setUrl] = useState("");
-    const [description, setDescription] = useState("");
+    const [title, setTitle] = useState("Titulo no disponible");
+    const [url, setUrl] = useState(
+        "https://www.cbc.ca/kidsnews/images/GOOGLE25THTHUMB2.png"
+    );
+    const [description, setDescription] = useState("Descripción no disponible");
 
     const handleSubmit = e => {
         e.preventDefault();

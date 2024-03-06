@@ -2,15 +2,12 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import "../css/cardReceta.css";
 
-
 const CardReceta = props => {
     return (
-        <Card
-            className="my-3 mx-auto anchoCardReceta"
-        >
+        <Card className="my-3 mx-auto anchoCardReceta">
             <Card.Img
                 variant="top"
-                src="https://www.cbc.ca/kidsnews/images/GOOGLE25THTHUMB2.png"
+                src={props.props.url}
                 className="altoCardImg"
             />
             <Card.Body className="d-flex flex-column">
