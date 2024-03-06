@@ -1,8 +1,23 @@
-# React + Vite
+## EJERCITACIÓN DE REACT PARTE 14 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ejercicio numero 14 practico de React de Rolling Code School
 
-Currently, two official plugins are available:
+## CONSIGNA A CUMPLIR 📚
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crear una aplicación web, que permita mostrar un blog de recetas de cocina en una página, desde otra pagina debo poder agregar, modificar o quitar las recetas y estas deben estar almacenadas en el localstorage o json-server.
+
+## HERRAMIENTAS UTILIZADAS 🛠
+
+-   Visual studio code.
+-   React
+-   React Botstrap
+-   React Router
+
+## ANOTACIONES 🔍
+Por cuestiones de tiempo no logramos hacer funcionar el "Update del CRUD"
+
+
+## AUTORES 🙋
+
+-   [@joaquinvazquezgarcia](https://github.com/joaquinvazquezgarcia)
+-   [@Pablolsardi](https://github.com/Pablolsardi)
