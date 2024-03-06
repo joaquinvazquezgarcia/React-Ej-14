@@ -1,6 +1,5 @@
 import Table from "react-bootstrap/Table";
 import edit from "../assets/edit.svg";
-import "../css/tablaRecetas.css";
 
 function TablaRecetas() {
     return (

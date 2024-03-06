@@ -19,6 +19,7 @@ const arrayDePrueba = [
     objetoDePrueba,
     objetoDePrueba,
     objetoDePrueba,
+    objetoDePrueba,
 ];
 
 export const Inicio = () => {
